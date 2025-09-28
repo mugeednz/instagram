@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LikesTableViewCell" rowHeight="155" id="KGk-i7-Jjw" customClass="LikesTableViewCell" customModule="instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Rz-2v-2Lq">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="155"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a1B-Af-7in" userLabel="User Profile Image View" customClass="userProfileImageView" customModule="instagram" customModuleProvider="target">
+                                <rect key="frame" x="8" y="52.666666666666657" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3hm-px-f8x"/>
+                                    <constraint firstAttribute="width" constant="50" id="FdJ-AN-Tld"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjE-Tq-B7f" userLabel="User Nick Name Label">
+                                <rect key="frame" x="70" y="67.666666666666671" width="300" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="I6S-WW-eQH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YjE-Tq-B7f" firstAttribute="centerY" secondItem="a1B-Af-7in" secondAttribute="centerY" id="3IA-48-vcm"/>
+                            <constraint firstItem="a1B-Af-7in" firstAttribute="leading" secondItem="6Rz-2v-2Lq" secondAttribute="leading" constant="8" id="Kef-GD-Jmz"/>
+                            <constraint firstItem="YjE-Tq-B7f" firstAttribute="leading" secondItem="a1B-Af-7in" secondAttribute="trailing" constant="12" id="XHY-hp-hu2"/>
+                            <constraint firstAttribute="trailing" secondItem="YjE-Tq-B7f" secondAttribute="trailing" constant="12" id="XTz-SJ-Ajo"/>
+                            <constraint firstItem="a1B-Af-7in" firstAttribute="centerY" secondItem="6Rz-2v-2Lq" secondAttribute="centerY" id="cOY-pI-brr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Rz-2v-2Lq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2pc-cW-Jpu"/>
+                    <constraint firstAttribute="bottom" secondItem="6Rz-2v-2Lq" secondAttribute="bottom" id="7kY-rJ-Qfr"/>
+                    <constraint firstItem="6Rz-2v-2Lq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mtu-D9-6hg"/>
+                    <constraint firstAttribute="trailing" secondItem="6Rz-2v-2Lq" secondAttribute="trailing" id="w2h-Rr-GF8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="userNickNameLabel" destination="YjE-Tq-B7f" id="aFh-qZ-ENi"/>
+                <outlet property="userProfileImageView" destination="a1B-Af-7in" id="IyG-ce-ao7"/>
+            </connections>
+            <point key="canvasLocation" x="83.969465648854964" y="53.169014084507047"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
