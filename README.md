@@ -1,6 +1,6 @@
 # 📸 Instagram Clone
 
-A fully functional **Instagram clone** built entirely with **Swift** and **SwiftUI**.  
+A fully functional **Instagram clone** built entirely with **Swift**.  
 This project replicates the core features of Instagram — photo sharing, likes, comments, and user profiles — using a clean architecture and Firebase integration.
 
 ---
